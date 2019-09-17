@@ -9,5 +9,8 @@ class testCase(unittest.TestCase):
     def test_second_negative(self):
         self.assertEqual(-1, validation_with_if.average(90, -92, 98))
 
+    def test_third_negative(self):
+        self.assertEqual(-1, validation_with_if.average(90, 92, -98))
+
 if __name__ == '__main__':
     unittest.main()
