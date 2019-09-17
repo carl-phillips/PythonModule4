@@ -2,9 +2,7 @@
 def average(score1, score2, score3):
     NUMBER_TESTS = 3
     try:
-        if score1 < 0:
-            raise ValueError
-        if score2 < 0:
+        if score1 < 0 or score2 < 0 or score3 < 0:
             raise ValueError
         avg = (int(score1) + int(score2) + int(score3)) / NUMBER_TESTS
     except:
