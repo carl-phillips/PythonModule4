@@ -5,6 +5,8 @@ def average(score1, score2, score3):
         return -1
     if score2 < 0:
         return -1
+    if score3 < 0:
+        return -1
 
     avg = (int(score1) + int(score2) + int(score3)) / NUMBER_TESTS
     print(str(avg));
