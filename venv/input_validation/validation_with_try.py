@@ -1,7 +1,14 @@
 
 def average(score1, score2, score3):
     NUMBER_TESTS = 3
-    avg = (int(score1) + int(score2) + int(score3)) / NUMBER_TESTS
+    try:
+        if score1 < 0:
+            raise ValueError
+        if score2 < 0:
+            raise ValueError
+        avg = (int(score1) + int(score2) + int(score3)) / NUMBER_TESTS
+    except:
+        raise ValueError
     print(str(avg));
     return avg
 
